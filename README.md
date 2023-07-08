@@ -1,6 +1,3 @@
-Natürlich! Hier ist der gesamte Code in Markdown-Syntax:
-
-```markdown
 ## User Button Control
 
 This script (`d_usr_button_ctrl.py`) provides control for a user button and display using the power LED on the Raspberry Pi.
@@ -58,4 +55,3 @@ python d_usr_button_ctrl.py -i 22 -t [5, 10, 15] -b [500, 250, 50] -c ['echo No 
 ### License
 
 This project is licensed under the MIT License.
-```

@@ -114,6 +114,7 @@ class CLed():
         while(self.thread_ctrl_stop == False):
             self.toggle()
             sleep(float(self.duty_time_ms)/1000)
+        print ("Thread ends")
 
 # run as standallone
 if __name__ == "__main__":

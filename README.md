@@ -1,6 +1,6 @@
 ## User Button Control
 
-This script (`d_usr_button_ctrl.py`) provides control for a user button and display using the power LED on the Raspberry Pi.
+This script (`raspi-button-ctrl.py`) provides control for a user button and display using the power LED on the Raspberry Pi.
 
 ### Prerequisites
 
@@ -13,19 +13,19 @@ This script (`d_usr_button_ctrl.py`) provides control for a user button and disp
 1. Clone the repository:
 
    ```
-   git clone <repository_url>
+   git clone git@github.com:fsteinha/raspi_button_ctrl.git
    ```
 
 2. Navigate to the project directory:
 
    ```
-   cd <project_directory>
+   cd raspi_button_ctrl/install
    ```
 
 3. Install the required dependencies:
 
    ```
-   pip install RPi.GPIO
+   sudo ./install.sh
    ```
 
 ### Usage
@@ -33,7 +33,7 @@ This script (`d_usr_button_ctrl.py`) provides control for a user button and disp
 Run the script using the following command:
 
 ```
-python d_usr_button_ctrl.py [-h] [-i INPUT] [-t TIMES] [-b BLINK_PERIODS] [-c COMMANDS]
+python raspi-button-ctrl.py [-h] [-i INPUT] [-t TIMES] [-b BLINK_PERIODS] [-c COMMANDS]
 ```
 
 #### Arguments
@@ -47,7 +47,7 @@ python d_usr_button_ctrl.py [-h] [-i INPUT] [-t TIMES] [-b BLINK_PERIODS] [-c CO
 **Example:**
 
 ```
-python d_usr_button_ctrl.py -i 22 -t [5, 10, 15] -b [500, 250, 50] -c ['echo No action 1', 'echo No action 2', 'sudo poweroff']
+python raspi-button-ctrl.py -i 22 -t [5, 10, 15] -b [500, 250, 50] -c ['echo No action 1', 'echo No action 2', 'sudo poweroff']
 ```
 
 **CAUTION:** The count of `blink_periods` must be the same as `times` and `commands`.

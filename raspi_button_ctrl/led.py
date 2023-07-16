@@ -89,7 +89,7 @@ class CLed():
 
         if self.duty_time_ms > 0:
             if self.thread != None and self.thread_ctrl_stop != False:
-                self.thread_ctrl_stop = True;
+                self.thread_ctrl_stop = True
                 self.thread.join()
 
             self.thread_ctrl_stop = False

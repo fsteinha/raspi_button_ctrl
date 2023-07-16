@@ -1,0 +1,9 @@
+[Unit]
+Description=Raspi button control service
+
+[Service]
+Type=simple
+ExecStart=python /opt/raspi-button-ctrl/raspi-button-ctrl.py -i 22 -t [5, 10, 15] -b [500, 250, 50] -c ['echo No action 1', 'echo No action 2', 'sudo poweroff']
+
+[Install]
+WantedBy=multi-user.target
